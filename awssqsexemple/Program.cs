@@ -27,7 +27,7 @@ while (true)
     {
         var req = new Supporttttt();
 
-        req.Id = new Random().Next(1, 1000);
+        req.Id = Guid.NewGuid();
 
         Console.Write("Введи ім'я: ");
         req.UserName = Console.ReadLine();
